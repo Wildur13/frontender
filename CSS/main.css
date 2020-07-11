@@ -1,4 +1,4 @@
-@import url("https://fonts.googleleapis.com/css?family-Montserrat");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,500;1,600;1,700;1,900&display=swap');
 
     body{
         margin: 0;
@@ -9,6 +9,12 @@
         font-size: .9em;
         line-height: 1.6em;
     }
+
+.scroll {
+    position: relative ;
+    text-align: center;
+    top: -.9em;
+}
 
 ul {
     list-style-type: none;
@@ -24,6 +30,7 @@ ul {
     width: 90px;
     height: 50px;
     text-align: center;
+    background: #fff;
 }
 
 .hide-mobile {
@@ -47,7 +54,6 @@ header {
 }
 
 h1, .subhead {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: relative;
     z-index: 3;
 }
@@ -128,7 +134,7 @@ h1, .subhead {
 
 figure {
     margin: 0;
-    padding: 0;
+    padding: 2em;
 }
 
 figcaption{
@@ -198,7 +204,7 @@ ul .footer-links li {
 }
 
 ul .footer-links li {
-    color: #9D9D9D;
+    color: #7a7070;
     font-size: .8em;
 }
 
@@ -241,6 +247,9 @@ nav ul li a:hover {
 
 @media only screen and (min-width: 650px){
 
+    .scroll{
+        width: auto;
+    }
     .server{
         width: 50%;
     }
@@ -248,6 +257,7 @@ nav ul li a:hover {
     h1 {
         font-size: 3em;
         margin: 0;
+        font-style: italic;
     }
     
     .subhead{
@@ -288,9 +298,9 @@ nav ul li a:hover {
 
     .server {
         color: #1D9AF2;
-        background-color: #292D3E;
+        background-color:skyblue;
         border: 1px solid #1D9AF2;
-        border-radius: 4px;
+        border-radius: 39%;
         padding: 0 15px;
         cursor: pointer;
         height:30%;
@@ -310,8 +320,9 @@ nav ul li a:hover {
 }
 
 @media only screen and (min-width: 875px){
-  .subhead {
-      margin-bottom: 25%;
+  .subhead  p{
+      margin-bottom: 2%;
+      font-style: italic;
   }
 
   .blue-container ul {
@@ -320,13 +331,14 @@ nav ul li a:hover {
 
   .gray-container ul {
       margin: 4% 0 0;
+      padding: 2em;
   }
 
   .server {
-    color: #1D9AF2;
-    background-color: #292D3E;
-    border: 1px solid #1D9AF2;
-    border-radius: 4px;
+    color: rgb(113, 115, 214);
+    background-color: rgb(113, 115, 214);
+    border: 1px solid #1461a8;
+    border-radius: 39%;
     padding: 0 15px;
     cursor: pointer;
     height:30%;
@@ -387,32 +399,11 @@ nav ul li a:hover {
         background-color: inherit;
     }
 
-    .logo {
-        width: 90px;
-        animation: move 1s infinite alternate;
-    }
-
-    @keyframes move {
-        0% {
-            transform: translateY(0px);
-        }
-
-        0% {
-            transform: rotateX(90deg);
-        }
-        100% {
-                transform: rotateY(90deg);
-        }
-        100% {
-            transform: translateY(40px);
-        }
-    }
-
     .server {
         color: #1D9AF2;
-        background-color: #292D3E;
+        background-color: skyblue;
         border: 1px solid #1D9AF2;
-        border-radius: 4px;
+        border-radius: 39%;
         padding: 0 15px;
         cursor: pointer;
         height:30%;
@@ -464,5 +455,17 @@ nav ul li a:hover {
     .blue-container img {
         width: 15%;
         margin-top: -4px;
+    }
+    .scroll{
+        animation: move 2s infinite alternate;
+    }
+    
+    @keyframes move {
+        0%{
+            transform: translateY(3deg);
+        }
+        100% {
+            transform: translateY(-3deg);
+        }
     }
 }
