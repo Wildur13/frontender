@@ -10,12 +10,6 @@
         line-height: 1.6em;
     }
 
-.scroll {
-    position: relative ;
-    text-align: center;
-    top: -.9em;
-}
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -247,14 +241,12 @@ nav ul li a:hover {
 
 @media only screen and (min-width: 650px){
 
-    .scroll{
-        width: auto;
-    }
     .server{
         width: 50%;
     }
 
     h1 {
+        padding: 1em;
         font-size: 3em;
         margin: 0;
         font-style: italic;
@@ -424,8 +416,9 @@ nav ul li a:hover {
     box-shadow: 0 3px 0 #00823f;
     top: 3px;
 }
-            
+
 }
+            
 
 @media only screen and (min-width: 1600px) {
     .server {
@@ -455,17 +448,5 @@ nav ul li a:hover {
     .blue-container img {
         width: 15%;
         margin-top: -4px;
-    }
-    .scroll{
-        animation: move 2s infinite alternate;
-    }
-    
-    @keyframes move {
-        0%{
-            transform: translateY(3deg);
-        }
-        100% {
-            transform: translateY(-3deg);
-        }
     }
 }
